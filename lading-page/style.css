@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
+
+:root {
+  /* bg colors */
+
+  --background: #81886b;
+  --primary: #f4eeed;
+  --secondary: #efd9d1;
+  --tertiaty: #ddb7ab;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background: var(--primary);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  padding: 0px 30px 0px 30px;
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 80px;
+}
+
+.cart-icon {
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--background);
+  padding: 12px 10px;
+  margin-top: 3px;
+  border-radius: 10%;
+  height: 40px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 150px;
+}
+
+.navbar-list {
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: var(--background);
+  font-family: "Halant", serif;
+  font-size: large;
+}
+
+.navbar-list li:first-child > a {
+  color: var(--tertiaty);
+  font-weight: 600;
+}
+
+/*
+font-family: 'Halant', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
