@@ -1,15 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Halant:wght@700&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Halant:wght@700&family=Montserrat:wght@200&family=Poppins:wght@300&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
+/* bg colors */
 
 :root {
-  /* bg colors */
-
   --background: #81886b;
   --primary: #f4eeed;
   --secondary: #efd9d1;
   --tertiaty: #ddb7ab;
+  --text: #ffffff;
 }
 
 * {
@@ -75,7 +72,83 @@ header {
   font-weight: 600;
 }
 
+main {
+  background: var(--background);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#hero {
+  margin-top: 65px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info h1 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 48px;
+  width: 80%;
+  color: var(--secondary);
+}
+
+.hero-info p {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  min-width: 500px;
+  font-size: 18px;
+  color: var(--text);
+}
+
+.hero-info a {
+  color: var(--text);
+  background-color: var(--tertiaty);
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-card {
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-card img {
+  margin-top: 150px;
+  border-radius: 5px;
+}
+
+.hero-card-info {
+  color: #363636;
+  font-weight: 600;
+}
 /*
 font-family: 'Halant', serif;
 font-family: 'Montserrat', sans-serif;
-font-family: 'Yanone Kaffeesatz', sans-serif; */
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-family: "Bebas Neue", cursive;
+ */
