@@ -63,13 +63,13 @@ header {
 
 .navbar-list a {
   color: var(--background);
-  font-family: "Halant", serif;
-  font-size: large;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .navbar-list li:first-child > a {
   color: var(--tertiaty);
-  font-weight: 600;
+  font-weight: 900;
 }
 
 main {
@@ -101,7 +101,7 @@ main {
 .hero-info h1 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
-  font-size: 48px;
+  font-size: 70px;
   width: 80%;
   color: var(--secondary);
 }
@@ -111,7 +111,7 @@ main {
   font-weight: 700;
   letter-spacing: 1px;
   min-width: 500px;
-  font-size: 18px;
+  font-size: 22px;
   color: var(--text);
 }
 
@@ -146,9 +146,62 @@ main {
   color: #363636;
   font-weight: 600;
 }
+
+#info {
+  padding: 70px, 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+#info h2 {
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 1800px;
+}
+
+.info-card {
+  width: 500px;
+  height: 190px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  background-color: var(--tertiaty);
+  border-radius: 10px;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: nowrap;
+  cursor: pointer;
+}
+.info-card img {
+  width: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info-card h3 {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
 /*
 font-family: 'Halant', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-family: "Bebas Neue", cursive;
- */
+font-family: "Poppins", sans-serif;
+*/
