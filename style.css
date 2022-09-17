@@ -159,6 +159,7 @@ main {
   flex-direction: column;
   gap: 30px;
   margin-bottom: 20px;
+  width: 60%;
 }
 
 #info h2 {
