@@ -10,8 +10,8 @@
 }
 
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
@@ -23,7 +23,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 70px;
   padding: 0px 30px 0px 30px;
   position: fixed;
   top: 0;
@@ -32,18 +32,6 @@ header {
 
 .logo {
   height: 80px;
-}
-
-.cart-icon {
-  height: 40px;
-  width: 40px;
-  border: 1px solid var(--background);
-  padding: 12px 10px;
-  margin-top: 3px;
-  border-radius: 10%;
-  height: 40px;
-  font-weight: 600;
-  cursor: pointer;
 }
 
 .navbar,
@@ -69,8 +57,20 @@ header {
 
 .navbar-list li:first-child > a {
   color: var(--tertiaty);
-  font-weight: 900;
 }
+
+.cart-icon {
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--background);
+  padding: 12px 10px;
+  margin-top: 3px;
+  border-radius: 10%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* hero */
 
 main {
   background: var(--background);
@@ -84,11 +84,12 @@ main {
 
 #hero {
   margin-top: 65px;
-  padding: 70px 0;
-  max-width: 1200px;
+  padding: 78px 0;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
 .hero-info {
@@ -112,6 +113,7 @@ main {
   letter-spacing: 1px;
   font-size: 22px;
   color: var(--text);
+  width: 90%;
 }
 
 .hero-info a {
@@ -122,13 +124,13 @@ main {
   border-radius: 10px;
   font-size: 14px;
   text-align: center;
+  font-weight: 600;
 }
 
 .hero-card {
-  width: 25%;
+  width: 23%;
   height: 500px;
   padding: 10px;
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,7 +140,7 @@ main {
 }
 
 .hero-card img {
-  margin-top: 10px;
+  margin-top: 100px;
   border-radius: 5px;
 }
 
@@ -147,9 +149,10 @@ main {
   font-weight: 600;
 }
 
+/* INFO */
+
 #info {
   padding: 70px 0;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,13 +164,12 @@ main {
 #info h2 {
   font-size: 38px;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 40px;
 }
 
 .info-cards-container {
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 40px;
   width: 100%;
@@ -176,15 +178,8 @@ main {
 .info-card {
   width: 300px;
   height: 300px;
-  padding: 40px 30px;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  text-align: center;
   background-color: var(--tertiaty);
   border-radius: 50%;
-  justify-content: space-evenly;
-  gap: 20px;
   flex-wrap: nowrap;
   cursor: pointer;
 }
@@ -205,13 +200,25 @@ main {
   color: rgb(56, 56, 56);
 }
 
+/* texto informacion */
+#information-text {
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 19px;
+}
+
 #products {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px 0;
-  max-width: 1200px;
   width: 100%;
 }
 
@@ -224,9 +231,7 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
-  max-width: 1200px;
-  width: 80%;
+  width: 50%;
   gap: 15px;
 }
 
@@ -240,7 +245,7 @@ main {
   width: 30%;
 }
 .product img {
-  height: 250px;
+  height: 230px;
   width: 250px;
   padding: 10px;
   border-radius: 10%;
@@ -312,6 +317,42 @@ main {
   margin-bottom: 5%;
   margin-left: 0;
 }
+
+/* FOOTER */
+
+footer {
+  background-color: #fcacac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer a {
+  color: var(--text);
+  font-weight: 600;
+}
+
+footer p {
+  color: var(--background);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+footer span {
+  color: var(--primary);
+  font-weight: 600;
+}
+
 /*
 font-family: 'Halant', serif;
 font-family: 'Montserrat', sans-serif;
