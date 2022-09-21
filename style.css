@@ -18,6 +18,8 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* header */
+
 header {
   background: var(--primary);
   width: 100%;
@@ -85,25 +87,25 @@ main {
 #hero {
   margin-top: 65px;
   padding: 78px 0;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  max-width: 846px;
 }
 
 .hero-info {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 50%;
+  width: 70%;
 }
 
 .hero-info h1 {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
-  font-size: 70px;
-  width: 80%;
+  font-size: 60px;
   color: var(--secondary);
 }
 
@@ -128,15 +130,13 @@ main {
 }
 
 .hero-card {
-  width: 23%;
-  height: 500px;
+  width: 36%;
   padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin: 20px 20px;
 }
 
 .hero-card img {
@@ -159,7 +159,9 @@ main {
   flex-direction: column;
   gap: 30px;
   margin-bottom: 20px;
-  width: 60%;
+  width: 50%;
+  flex-wrap: wrap;
+  max-width: 800px;
 }
 
 #info h2 {
@@ -171,26 +173,25 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
   gap: 40px;
   width: 100%;
 }
 
 .info-card {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-color: var(--tertiaty);
   border-radius: 50%;
   flex-wrap: nowrap;
   cursor: pointer;
 }
 .info-card img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
-.subtitulos-info {
+.info-cards-container h3 {
   display: flex;
   width: 100%;
   height: 80px;
@@ -202,6 +203,7 @@ main {
 }
 
 /* texto informacion */
+
 #information-text {
   width: 35%;
   justify-content: center;
@@ -213,6 +215,8 @@ main {
   font-weight: 400;
   font-size: 19px;
 }
+
+/* TOP products */
 
 #products {
   display: flex;
@@ -232,8 +236,8 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 50%;
   gap: 15px;
+  max-width: 992px;
 }
 
 .product {
@@ -246,17 +250,16 @@ main {
   width: 30%;
 }
 .product img {
-  height: 230px;
-  width: 250px;
-  padding: 10px;
-  border-radius: 10%;
-  margin-left: 5%;
+  width: 100%;
+  border-radius: 15px;
+  height: 300px;
+  margin-bottom: 4px;
 }
 
 .product-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -264,7 +267,7 @@ main {
 .product-mid,
 .product-bot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: #363636;
 }
@@ -274,33 +277,34 @@ main {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   text-align: center;
-  padding: 2px;
+  margin: 5px 0;
 }
 
 .product-mid p {
   font-size: 18px;
   font-weight: 600;
-  margin: 0 6%;
-  height: 150px;
+  padding: 10px;
+  margin: 0 10px;
 }
 
+.product-bot {
+  justify-content: space-between;
+}
 .product-price {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   align-content: center;
   padding: 6%;
 }
 
 .product-bot img {
-  height: 40px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
 }
 .product-bot p {
   font-weight: 600;
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
-  margin-left: 6%;
 }
 
 .btn-add {
@@ -309,20 +313,15 @@ main {
   color: var(--primary);
   background-color: var(--background);
   cursor: pointer;
-  border-radius: 15%;
+  border-radius: 45%;
   border: solid var(--background);
-  margin-right: 30px;
-}
-
-.product-price img {
-  margin-bottom: 5%;
-  margin-left: 0;
+  margin-right: 20px;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: #fcacac;
+  background-color: var(--tertiaty);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,22 +334,22 @@ footer {
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 footer a {
-  color: var(--text);
+  color: black;
   font-weight: 600;
 }
 
 footer p {
-  color: var(--background);
+  color: black;
   font-weight: 600;
   font-size: 16px;
 }
 
 footer span {
-  color: var(--primary);
+  color: var(--background);
   font-weight: 600;
 }
 
