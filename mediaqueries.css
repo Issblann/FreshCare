@@ -1,0 +1,82 @@
+/* Computadora */
+@media (max-width: 1200px) {
+  #hero {
+    width: 75%;
+  }
+
+  .navbar {
+    gap: 100px;
+  }
+}
+
+/* Tablet*/
+
+@media (max-width: 992px) {
+  #hero {
+    width: 100%;
+  }
+  .hero-card {
+    display: none;
+  }
+
+  .hero-info {
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .hero-info h1 {
+    max-width: 494px;
+    min-height: 156px;
+  }
+  .hero-info p {
+    max-width: 388px;
+  }
+
+  #information-text {
+    height: 160px;
+    width: 100%;
+    margin-bottom: 65px;
+  }
+
+  #information-text h2 {
+    display: block;
+  }
+  #information-text p {
+    text-align: center;
+    font-size: 18px;
+    width: 600px;
+  }
+
+  #info {
+    align-content: center;
+  }
+  #info h2 {
+    font-size: 34px;
+  }
+  .info-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .info-card img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .info-card h3 {
+    font-size: 20px;
+  }
+
+  .products-container {
+    max-width: 769px;
+  }
+
+  .product {
+    width: 45%;
+  }
+}
+
+/* Celular */
