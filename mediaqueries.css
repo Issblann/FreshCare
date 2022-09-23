@@ -79,4 +79,54 @@
   }
 }
 
+/* Tablet / Celular */
+
+@media (max-width: 768px) {
+  #information-text p {
+    width: 400px;
+  }
+  .info-cards-container {
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  #info h2 {
+    width: 400px;
+    text-align: center;
+  }
+
+  .product {
+    width: 300px;
+  }
+}
+
 /* Celular */
+
+@media (max-width: 576px) {
+  #information-text {
+    gap: 40px;
+  }
+
+  #information-text p {
+    width: 300px;
+    height: 200px;
+    font-size: 13px;
+  }
+
+  #info {
+    width: 300px;
+  }
+
+  #info h2 {
+    font-size: 25px;
+    width: 300px;
+  }
+
+  #products h2 {
+    width: 300px;
+  }
+
+  .products-container {
+    width: 340px;
+  }
+}
