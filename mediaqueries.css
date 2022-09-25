@@ -1,11 +1,29 @@
 /* Computadora */
+
+@media (min-width: 1201px) {
+  #hero {
+    max-width: 1200px;
+  }
+
+  .hero-info {
+    margin-left: 30px;
+  }
+
+  .hero-info p {
+    font-size: 30px;
+  }
+
+  .hero-info a {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 1200px) {
   #hero {
     width: 75%;
-  }
-
-  .navbar {
-    gap: 100px;
   }
 }
 
