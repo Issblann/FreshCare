@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Halant:wght@700&family=Montserrat:wght@200&family=Poppins:wght@300&family=Roboto+Condensed:wght@700&family=Yanone+Kaffeesatz:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 /* bg colors */
 
 :root {
-  --background: #81886b;
-  --primary: #f4eeed;
-  --secondary: #efd9d1;
-  --tertiaty: #ddb7ab;
-  --text: #ffffff;
+  --background: #fffcf8;
+  --gray: #808080;
+  --gray-dark: #333333;
+  --yellow-mostaza: #f7b941;
+  --rojo-anaranjado: #f45858;
+  --gray-light: #f3ebe1;
 }
 
 * {
@@ -15,13 +16,16 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
+body {
+  background-color: var(--background);
+}
 /* header */
 
 header {
-  background: var(--primary);
+  background-color: var(--background);
   width: 100%;
   display: flex;
   align-items: center;
@@ -32,8 +36,10 @@ header {
   justify-content: space-between;
 }
 
-.logo {
-  height: 80px;
+.barra {
+  background-color: var(--gray-light);
+  height: 71px;
+  width: 80%;
 }
 
 .navbar,
@@ -44,7 +50,11 @@ header {
 }
 
 .navbar {
-  gap: 150px;
+  gap: 100px;
+}
+
+.logo {
+  margin-left: 90px;
 }
 
 .navbar-list {
@@ -52,13 +62,12 @@ header {
 }
 
 .navbar-list a {
-  color: var(--background);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  color: var(--gray);
+  font-weight: 400;
 }
 
 .navbar-list li:first-child > a {
-  color: var(--tertiaty);
+  color: black;
 }
 
 .cart-icon {
@@ -70,13 +79,14 @@ header {
   border-radius: 10%;
   font-weight: 600;
   cursor: pointer;
+  background-color: var(--background);
 }
 
 /* hero */
 
 main {
   background: var(--background);
-  color: white;
+  color: var(--gray-dark);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +95,7 @@ main {
 }
 
 #hero {
-  margin-top: 65px;
+  margin-top: 10px;
   padding: 78px 0;
   width: 100%;
   display: flex;
@@ -102,14 +112,12 @@ main {
 }
 
 .hero-info h1 {
-  font-family: "Bebas Neue", cursive;
   letter-spacing: 2px;
   font-size: 60px;
   color: var(--secondary);
 }
 
 .hero-info p {
-  font-family: "Yanone Kaffeesatz", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 22px;
@@ -119,11 +127,11 @@ main {
 
 .hero-info a {
   color: var(--text);
-  background-color: var(--tertiaty);
+  background-color: var(--rojo-anaranjado);
   width: 120px;
-  padding: 8px 0px;
+  padding: 9px 0px;
   border-radius: 10px;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
   font-weight: 600;
 }
@@ -140,11 +148,10 @@ main {
 
 .hero-card img {
   margin-top: 100px;
-  border-radius: 5px;
 }
 
 .hero-card-info {
-  color: #363636;
+  color: var(--rojo-anaranjado);
   font-weight: 600;
 }
 
@@ -165,7 +172,6 @@ main {
 
 #info h2 {
   font-size: 38px;
-  font-family: "Poppins", sans-serif;
 }
 
 .info-cards-container {
@@ -230,12 +236,13 @@ main {
   align-items: center;
   gap: 30px 0;
   width: 100%;
-  margin-bottom: 10px;
+
+  background-color: var(--gray-light);
 }
 
 #products h2 {
-  font-family: "Poppins", sans-serif;
   font-size: 40px;
+  margin-top: 30px;
 }
 .products-container {
   display: flex;
@@ -247,18 +254,16 @@ main {
 }
 
 .product {
-  background-color: var(--secondary);
-  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 30px 35px;
   width: 30%;
+  background-color: var(--background);
 }
 .product img {
   width: 100%;
-  border-radius: 15px;
-  height: 300px;
+  height: 340px;
   margin-bottom: 4px;
 }
 
@@ -269,66 +274,46 @@ main {
   gap: 20px;
 }
 
-.product-top,
-.product-mid,
-.product-bot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #363636;
-}
-
 .product-top h3 {
-  font-size: 25px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  margin: 5px 0;
-}
-
-.product-mid p {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px;
-  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin: 5px 15px;
 }
 
 .product-bot {
-  justify-content: space-between;
-}
-.product-price {
   display: flex;
-  align-items: center;
-  align-content: center;
+  color: #363636;
+  flex-direction: column;
+}
+
+.product-price {
   padding: 6%;
 }
 
-.product-bot img {
-  height: 25px;
-  width: 25px;
-}
 .product-bot p {
-  font-weight: 600;
-  font-family: "Bebas Neue", cursive;
+  font-weight: 800;
+
   font-size: 25px;
   color: black;
 }
 
+.product-bot span {
+  font-size: 20px;
+}
 .btn-add {
-  height: 40px;
-  width: 60px;
-  color: var(--primary);
+  height: 50px;
+  width: 297px;
+  color: var(--gray);
   background-color: var(--background);
   cursor: pointer;
-  border-radius: 45%;
-  border: solid var(--background);
-  margin-right: 20px;
+  border: solid 1px black;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: var(--tertiaty);
+  background-color: var(--background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,7 +341,7 @@ footer p {
 }
 
 footer span {
-  color: var(--background);
+  color: var(--rojo-anaranjado);
   font-weight: 600;
 }
 
