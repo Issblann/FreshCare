@@ -145,6 +145,9 @@
 /* Tablet / Celular */
 
 @media (max-width: 768px) {
+  .contact-container {
+    gap: 30px;
+  }
   #information-text {
     gap: 40px;
   }
@@ -174,6 +177,7 @@
     width: 100%;
     border: none;
   }
+
   .hero-info h1 {
     font-size: 50px;
     padding: 0 10px;
