@@ -1,8 +1,17 @@
+:root {
+  --background: #fffcf8;
+  --gray: #808080;
+  --gray-dark: #333333;
+  --yellow-mostaza: #f7b941;
+  --rojo-anaranjado: #f45858;
+  --gray-light: #f3ebe1;
+}
+
 /* Computadora */
 
 @media (min-width: 1201px) {
   #hero {
-    max-width: 1200px;
+    max-width: 1000px;
   }
 
   .hero-info {
@@ -23,13 +32,49 @@
 
 @media (max-width: 1200px) {
   #hero {
-    width: 75%;
+    max-width: 800px;
   }
 }
 
 /* Tablet*/
 
 @media (max-width: 992px) {
+  .navbar {
+    gap: 10px;
+  }
+  .navbar-list {
+    position: absolute;
+    top: 70px;
+    width: 90%;
+    flex-direction: column;
+    background: var(--rojo-anaranjado);
+    left: 5%;
+    right: 5%;
+    font-size: 15px;
+    padding: 45px 0;
+    gap: 40px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar-list a {
+    color: white;
+  }
+
+  .menu-label {
+    display: flex;
+    cursor: pointer;
+    order: 2;
+  }
+
+  #menu-toggle:checked + .navbar-list {
+    display: flex;
+  }
+
+  .logo {
+    margin-left: 35px;
+  }
+
   #hero {
     width: 100%;
   }
@@ -124,14 +169,36 @@
 /* Celular */
 
 @media (max-width: 576px) {
+  .cart {
+    left: 0;
+    width: 100%;
+    border: none;
+  }
+  .hero-info h1 {
+    font-size: 50px;
+    padding: 0 10px;
+    max-width: 360px;
+    max-height: 236px;
+  }
+
+  .hero-info p {
+    font-size: 19px;
+    text-align: center;
+    max-width: 324px;
+    max-height: 198px;
+  }
+
+  .hero-info a {
+  }
+
   #information-text {
     gap: 40px;
   }
 
   #information-text p {
-    width: 400px;
-    height: 200px;
-    font-size: 17px;
+    max-width: 300px;
+    max-height: 300px;
+    font-size: 15px;
   }
 
   #info {
@@ -140,14 +207,36 @@
 
   #info h2 {
     font-size: 25px;
-    width: 300px;
+
+    max-width: 300px;
   }
 
   #products h2 {
-    width: 300px;
+    max-width: 320px;
   }
 
   .products-container {
     width: 340px;
   }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    max-width: 150px;
+  }
+  .products-container {
+    max-width: 300px;
+  }
+}
+
+#products h2 {
+  font-size: 30px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer a {
+  font-size: 14px;
 }

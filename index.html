@@ -12,40 +12,119 @@
     <header>
       <img src="./assets/Navbar/logo.png" alt="logo" class="logo" />
       <nav class="navbar">
-        <ul class="navbar-list">
-          <li><a class="navbar'link" href="#">INICIO</a></li>
-          <li><a class="navbar'link" href="#">MAQUILLAJE</a></li>
-          <li><a class="navbar'link" href="#">CUIDADO FACIAL</a></li>
-          <li><a class="navbar'link" href="#">CONTACTANOS</a></li>
-        </ul>
-        <img
-          src="./assets/Navbar/107831.png"
-          alt="carrito de compras"
-          class="cart-icon"
-        />
+        <label for="menu-toggle" class="menu-label">
+          <img
+            src="/assets/Navbar/menu-regular-24.png"
+            alt="menu-hamburguesa"
+            class="menu-icon"
+          />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
 
-        <!--
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="#">INICIO</a></li>
+          <li><a class="navbar-link" href="#">MAQUILLAJE</a></li>
+          <li><a class="navbar-link" href="#">CUIDADO FACIAL</a></li>
+          <li><a class="navbar-link" href="#">CONTACTANOS</a></li>
+        </ul>
+
+        <label for="cart-toggle" class="cart-label">
+          <img
+            src="./assets/Navbar/107831.png"
+            alt="carrito de compras"
+            class="cart-icon"
+          />
+        </label>
+
+        <input type="checkbox" id="cart-toggle" />
+
         <div class="cart">
           <h2>CARRITO DE COMPRAS</h2>
-          <div class="cart-item">
-            <img src="" alt="imagen" />
-          </div>
-          <div class="item-info">
-            <h3 class="item-title">Cerave Gel Limpiador Espumoso</h3>
-            <p class="item-price">17,65</p>
-          </div>
-          <div class="item-handler">
-            <span class="quantity-handler down">-</span>
-            <span class="item-quantity">1</span>
-            <span class="quantity-handler up">+</span>
-          </div>
-        </div>
 
-        <span class="divider"></span>
-        <div class="cart-total">
-          <p>Total:</p>
-          <span>17,65</span>
-        </div> -->
+          <div class="cart-item">
+            <img src="./assets/Cart/Vitamin-Moisture.jpg" alt="imagen" />
+
+            <div class="item-info">
+              <h3 class="item-title">Vitamin Moisture Cream</h3>
+              <p class="item-price">22,04</p>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="/assets/Cart/tone-up-cushion.jpg" alt="imagen" />
+
+            <div class="item-info">
+              <h3 class="item-title">Maxclinic Tone up BB Cushion</h3>
+              <p class="item-price">22,04</p>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="/assets/Cart/fake-up-colorshading.jpg" alt="imagen" />
+
+            <div class="item-info">
+              <h3 class="item-title">Fake Up 3 Color Shading</h3>
+              <p class="item-price">14,25</p>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="/assets/Cart/Toner- MaxClinic.jpg" alt="imagen" />
+
+            <div class="item-info">
+              <h3 class="item-title">Cica Biome Toner MaxClinic</h3>
+              <p class="item-price">30,09</p>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <img src="/assets/Cart/Baked-Velvet-Tint.jpg" alt="imagen" />
+
+            <div class="item-info">
+              <h3 class="item-title">Baked Velvet Tint</h3>
+              <p class="item-price">12,24</p>
+            </div>
+
+            <div class="item-handler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>Total:</p>
+            <span>100,66</span>
+          </div>
+
+          <button class="btn-add-cart mostaza">COMPRAR AHORA</button>
+          <button class="btn-add-cart black">CONTINUAR COMPRANDO</button>
+        </div>
       </nav>
     </header>
 
@@ -53,7 +132,7 @@
       <span class="barra"></span>
       <section id="hero">
         <div class="hero-info">
-          <h1>Lo Mejor Para la Salud de tu Piel</h1>
+          <h1>LO MEJOR PARA LA SALUD DE TU PIEL</h1>
           <p>
             Ofrecemos lo mejor para tu piel con productos originales y aprobados
             dermatológicamente. Seleccionamos cuidadosamente para darte los
@@ -186,6 +265,7 @@
             </div>
           </div>
         </div>
+        <button class="btn-add ver-mas">Ver más</button>
       </section>
     </main>
 
