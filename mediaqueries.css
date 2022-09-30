@@ -188,9 +188,6 @@
     max-height: 198px;
   }
 
-  .hero-info a {
-  }
-
   #information-text {
     gap: 40px;
   }
@@ -227,16 +224,15 @@
   .products-container {
     max-width: 300px;
   }
-}
+  #products h2 {
+    font-size: 30px;
+  }
 
-#products h2 {
-  font-size: 30px;
-}
+  footer p {
+    font-size: 14px;
+  }
 
-footer p {
-  font-size: 14px;
-}
-
-footer a {
-  font-size: 14px;
+  footer a {
+    font-size: 14px;
+  }
 }
