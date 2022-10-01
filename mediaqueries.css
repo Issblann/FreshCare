@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 1200px) {
+  #contact {
+    font-size: 14px;
+  }
   #hero {
     max-width: 800px;
   }
@@ -73,6 +76,10 @@
 
   .logo {
     margin-left: 35px;
+  }
+
+  #contact {
+    font-size: 11px;
   }
 
   #hero {
@@ -145,9 +152,12 @@
 /* Tablet / Celular */
 
 @media (max-width: 768px) {
-  .contact-container {
-    gap: 30px;
+  #contact {
+    font-size: 11px;
+    width: 370px;
+    padding: 10px 0;
   }
+
   #information-text {
     gap: 40px;
   }
