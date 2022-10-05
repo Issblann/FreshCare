@@ -79,24 +79,22 @@ header {
 }
 
 .cart-icon {
-  height: 40px;
   width: 40px;
   border: 1px solid var(--background);
   padding: 12px 10px;
-  margin-top: 3px;
   border-radius: 10%;
   font-weight: 600;
   cursor: pointer;
   background-color: var(--background);
   transition-property: all;
   transition-duration: 0.3s;
+  color: var(--rojo-anaranjado);
 }
 
 .cart-icon:hover {
   transition-property: all;
   transition-duration: 0.3s;
-  width: 43px;
-  height: 43px;
+  font-size: 19px;
 }
 
 .cart {
