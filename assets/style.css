@@ -47,7 +47,7 @@ header {
 }
 
 .navbar {
-  gap: 100px;
+  gap: 45px;
 }
 
 .logo {
@@ -78,6 +78,10 @@ header {
   padding: 8px;
 }
 
+.fa-solid,
+.fa-user {
+  color: var(--yellow-mostaza);
+}
 .cart-icon {
   width: 40px;
   border: 1px solid var(--background);
@@ -306,9 +310,9 @@ main {
   margin: 20px 20px;
 }
 
-.hero-card img {
+/* .hero-card img {
   margin-top: 100px;
-}
+} */
 
 .hero-card-info {
   color: var(--rojo-anaranjado);
@@ -348,22 +352,21 @@ main {
   background-color: var(--tertiaty);
   border-radius: 50%;
   flex-wrap: nowrap;
-  cursor: pointer;
 }
 .info-card img {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  transition-property: all;
-  transition-duration: 0.3s;
+  /* transition-property: all;
+  transition-duration: 0.3s; */
 }
 
-.info-card img:hover {
+/* .info-card img:hover {
   transition-property: all;
   transition-duration: 0.3s;
   width: 260px;
   height: 260px;
-}
+} */
 
 .info-cards-container h3 {
   display: flex;
@@ -413,6 +416,25 @@ main {
   font-size: 40px;
   margin-top: 30px;
 }
+
+.containerCategories {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.buttonCategory {
+  background: var(--gray);
+  color: var(--background);
+  border: none;
+  font-size: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
 .products-container {
   display: flex;
   flex-wrap: wrap;
@@ -430,6 +452,7 @@ main {
   width: 30%;
   background-color: var(--background);
 }
+
 .product img {
   width: 100%;
   height: 340px;
@@ -470,6 +493,7 @@ main {
 .product-bot span {
   font-size: 20px;
 }
+
 .btn-add {
   width: 297px;
   color: var(--gray);
@@ -490,13 +514,20 @@ main {
   transition-duration: 0.3s;
 }
 
-.ver-mas {
+.verMas {
   border-radius: 10px;
   width: 250px;
   margin-bottom: 20px;
   font-size: 14px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  background: var(--rojo-anaranjado);
+}
 /* CONTACTO */
 
 #contact {
