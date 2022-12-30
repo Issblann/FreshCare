@@ -2,7 +2,6 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 70px;
 }
-
 .overlay {
   position: absolute;
   top: 70px;
@@ -16,7 +15,6 @@ html {
   display: none;
 }
 
-#cart-toggle:checked ~ .overlay,
-#menu-toggle:checked ~ .overlay {
-  display: block;
+.show-overlay {
+  display: flex;
 }

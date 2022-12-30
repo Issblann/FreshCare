@@ -64,16 +64,17 @@
     color: white;
   }
 
-  .menu-label {
+  .menu-icon {
     display: flex;
     cursor: pointer;
     order: 2;
   }
-
-  #menu-toggle:checked + .navbar-list {
+  .open-menu {
     display: flex;
   }
-
+  /* .menu-icon {
+    display: block;
+  } */
   .logo {
     margin-left: 35px;
   }
