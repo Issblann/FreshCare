@@ -33,94 +33,24 @@
           <i class="fa-solid fa-user user-icon"> </i>
           <i class="fa-sharp fa-solid fa-cart-shopping cart-icon"></i>
           <i class="fa-solid fa-bars menu-icon"></i>
+          <div class="cart-bubble">0</div>
         </div>
 
         <div class="cart-container">
           <h2>CARRITO DE COMPRAS</h2>
-
-          <!-- <div class="cart-item">
-            <img src="./assets/Cart/Vitamin-Moisture.jpg" alt="imagen" /> -->
-
-          <!-- <div class="item-info">
-              <h3 class="item-title">Vitamin Moisture Cream</h3>
-              <p class="item-price">22,04</p>
-            </div>
-
-            <div class="item-handler">
-              <span class="quantity-handler down">-</span>
-              <span class="item-quantity">1</span>
-              <span class="quantity-handler up">+</span>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="/assets/Cart/tone-up-cushion.jpg" alt="imagen" />
-
-            <div class="item-info">
-              <h3 class="item-title">Maxclinic Tone up BB Cushion</h3>
-              <p class="item-price">22,04</p>
-            </div>
-
-            <div class="item-handler">
-              <span class="quantity-handler down">-</span>
-              <span class="item-quantity">1</span>
-              <span class="quantity-handler up">+</span>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="/assets/Cart/fake-up-colorshading.jpg" alt="imagen" />
-
-            <div class="item-info">
-              <h3 class="item-title">Fake Up 3 Color Shading</h3>
-              <p class="item-price">14,25</p>
-            </div>
-
-            <div class="item-handler">
-              <span class="quantity-handler down">-</span>
-              <span class="item-quantity">1</span>
-              <span class="quantity-handler up">+</span>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="/assets/Cart/Toner- MaxClinic.jpg" alt="imagen" />
-
-            <div class="item-info">
-              <h3 class="item-title">Cica Biome Toner MaxClinic</h3>
-              <p class="item-price">30,09</p>
-            </div>
-
-            <div class="item-handler">
-              <span class="quantity-handler down">-</span>
-              <span class="item-quantity">1</span>
-              <span class="quantity-handler up">+</span>
-            </div>
-          </div>
-
-          <div class="cart-item">
-            <img src="/assets/Cart/Baked-Velvet-Tint.jpg" alt="imagen" />
-
-            <div class="item-info">
-              <h3 class="item-title">Baked Velvet Tint</h3>
-              <p class="item-price">12,24</p>
-            </div>
-
-            <div class="item-handler">
-              <span class="quantity-handler down">-</span>
-              <span class="item-quantity">1</span>
-              <span class="quantity-handler up">+</span>
-            </div>
-          </div>
-
+          <div class="card-container"></div>
           <span class="divider"></span>
           <div class="cart-total">
             <p>Total:</p>
-            <span>100,66</span>
-          </div> -->
+            <span class="total">100,66</span>
+          </div>
 
-          <!-- <button class="btn-add-cart mostaza">COMPRAR AHORA</button>
-          <button class="btn-add-cart black">CONTINUAR COMPRANDO</button> -->
+          <button id="btn-cart-buy" class="btn-add-cart mostaza">
+            COMPRAR AHORA
+          </button>
+          <button id="btn-cart-clear" class="btn-add-cart black">
+            VACIAR CARRITO
+          </button>
         </div>
 
         <div class="user-container">
@@ -260,6 +190,7 @@
         </ul>
       </div>
     </footer>
+    <div class="add-modal"></div>
     <script src="/assets/data.js"></script>
     <script src="/assets/main.js"></script>
   </body>

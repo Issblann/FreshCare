@@ -64,6 +64,10 @@
     color: white;
   }
 
+  .cart-bubble {
+    top: 18px;
+    right: 68px;
+  }
   .menu-icon {
     display: flex;
     cursor: pointer;
