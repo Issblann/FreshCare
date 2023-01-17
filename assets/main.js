@@ -63,7 +63,7 @@ const renderProduct = (product) => {
         <div class="product-price">
           <p><span>$</span>${price}</p>
         </div>
-        <div><button class="btn-add" data-id="${id}" data-name="${name}" data-price="${price}"  data-img="${cardImg}" >Agregar al carrito</button></div>
+        <div><button class="btn-add" data-id=${id} data-name=${name} data-price=${price}  data-img=${cardImg} >Agregar al carrito</button></div>
       </div>
     </div>
   </div>
@@ -122,7 +122,6 @@ const changeAddMoreBtn = (category) => {
 // cambiar status del boton de categoria
 const changeStateButtonCategory = (selectedCategory) => {
   const categoriesList = [...buttonCategory];
-  // categoriesList.push(buttonCategory);
   categoriesList.forEach((button) => {
     if (button.dataset.category !== selectedCategory) {
       button.classList.remove("active");
@@ -234,10 +233,10 @@ const closeOnClickMenu = () => {
 
 // renderizar la card en el carrito
 const renderCardProduct = (card) => {
-  const { cardImg, price, name, id, quantity } = card;
+  const { price, name, id, quantity, cardImg } = card;
   return `
 <div class="cart-item">
-            <img src=${cardImg} alt="imagen" /> 
+            <img src=${cardImg}   alt="imagen" /> 
 
           <div class="item-info">
               <h3 class="item-title">${name}</h3>
@@ -341,6 +340,7 @@ const addUnitToProduct = (product) => {
   });
 };
 
+// modal para la confirmacion de producto agregado
 const showSuccessModal = (msg) => {
   successModal.classList.add("active-modal");
   successModal.textContent = msg;
@@ -349,6 +349,7 @@ const showSuccessModal = (msg) => {
   }, 1500);
 };
 
+// se crea la card del producto
 const createCardProduct = (product) => {
   carrito = [
     ...carrito,
@@ -357,6 +358,84 @@ const createCardProduct = (product) => {
       quantity: 1,
     },
   ];
+};
+
+// funcionalidad boton sustraer producto del carrito
+const holdMinusBtnEvent = (id) => {
+  const cardProductExisting = carrito.find((item) => {
+    return item.id === id;
+  });
+
+  if (cardProductExisting.quantity === 1) {
+    if (window.confirm("Desea eliminar el producto del carrito?")) {
+      removeProductFromCard(cardProductExisting);
+    }
+    return;
+  }
+  substractProductUnit(cardProductExisting);
+};
+
+// eliminar producto del carrito
+const removeProductFromCard = (cardProductExisting) => {
+  carrito = carrito.filter((product) => product.id !== cardProductExisting.id);
+  checkCartState();
+};
+
+// sustraer una unidad del carrito
+const substractProductUnit = (cardProductExisting) => {
+  carrito = carrito.map((product) => {
+    return product.id === cardProductExisting.id
+      ? {
+          ...product,
+          quantity: Number(product.quantity) - 1,
+        }
+      : product;
+  });
+};
+
+// agregar una unidad mas al producto del carrito
+const holdPlusBtnEvent = (id) => {
+  const cardProductExisting = carrito.find((item) => {
+    return item.id === id;
+  });
+
+  addUnitToProduct(cardProductExisting);
+};
+
+// funcion para sustraer o sumar cantidad al producto del carrito
+const holdQuantity = (e) => {
+  if (e.target.classList.contains("down")) {
+    holdMinusBtnEvent(e.target.dataset.id);
+  } else if (e.target.classList.contains("up")) {
+    holdPlusBtnEvent(e.target.dataset.id);
+  }
+
+  checkCartState();
+};
+
+// resetear carrito
+const resetCartItems = () => {
+  carrito = [];
+  checkCartState();
+};
+
+// saltar mensaje cuando se complete o se vacie un carrito
+const completeCartAction = (confirmMsg, successMsg) => {
+  if (!carrito.length) return;
+  if (window.confirm(confirmMsg)) {
+    resetCartItems();
+    alert(successMsg);
+  }
+};
+
+// para boton de comprar
+const completeBuy = () => {
+  completeCartAction("Desea completar su compra?", "Gracias por su compra!");
+};
+
+// para boton de vaciar
+const deleteCart = () => {
+  completeCartAction("Desea eliminar su carrito?", "Carrito eliminado :)");
 };
 
 const init = () => {
@@ -374,7 +453,10 @@ const init = () => {
   renderCartBubble();
   disableBtn(btnBuyCart);
   disableBtn(btnCleanCart);
+  btnBuyCart.addEventListener("click", completeBuy);
+  btnCleanCart.addEventListener("click", deleteCart);
   productsContainer.addEventListener("click", addToCart);
+  cardContainer.addEventListener("click", holdQuantity);
 };
 
 init();
