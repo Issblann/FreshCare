@@ -236,7 +236,7 @@ const renderCardProduct = (card) => {
   const { price, name, id, quantity, cardImg } = card;
   return `
 <div class="cart-item">
-            <img src=${cardImg}   alt="imagen" /> 
+            <img src=${cardImg} alt="imagen" /> 
 
           <div class="item-info">
               <h3 class="item-title">${name}</h3>

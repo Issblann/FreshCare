@@ -6,7 +6,8 @@ const dataProducts = [
     name: "Heimish All Clean balm 120ml",
     price: 16.75,
     category: "desmaquillante",
-    cardImg: "./assets/products/desmaquillante/Heimish-All-Clean-balm120ml.jpg",
+    cardImg:
+      "./assets/Products/desmaquillantes/Heimish-All-Clean-balm120ml.jpg",
   },
 
   {
@@ -14,7 +15,7 @@ const dataProducts = [
     name: "Super Hyalon Foam Cleanser",
     price: 12.75,
     category: "limpiador",
-    cardImg: "./assets/products/limpiadores/Super-Hyalon-Foam-Cleanser.jpg",
+    cardImg: "./assets/Products/limpiadores/Super-Hyalon-Foam-Cleanser.jpg",
   },
 
   {
@@ -23,7 +24,7 @@ const dataProducts = [
     price: 23.65,
     category: "hidratante",
     cardImg:
-      "./assets/products/hidratantes/Tonymoly-TheChokChok-GreenTea-WateryCream-60ml.jpg",
+      "./assets/Products/hidratantes/Tonymoly-TheChokChok-GreenTea-WateryCream-60ml.jpg",
   },
   {
     id: 4,
@@ -31,7 +32,7 @@ const dataProducts = [
     price: 35.2,
     category: "protectorSolar",
     cardImg:
-      "./assets/products/protector-solar/TOCOBO-BIO-WATERY-SUN-CREAM-SPF50+-PA++++.jpg",
+      "./assets/Products/protectoresSolares/TOCOBO-BIO-WATERY-SUN-CREAM-SPF50+-PA++++.jpg",
   },
   {
     id: 5,
@@ -39,7 +40,7 @@ const dataProducts = [
     price: 40.1,
     category: "maquillaje",
     cardImg:
-      "./assets/products/maquillaje/TirTir-TirTir-My-Glow-Cream-Cushion-21N-Ivory.jpg",
+      "./assets/Products/maquillaje/TirTir-TirTir-My-Glow-Cream-Cushion-21N-Ivory.jpg",
   },
   {
     id: 6,
@@ -47,7 +48,7 @@ const dataProducts = [
     price: 23.3,
     category: "desmaquillante",
     cardImg:
-      "./assets/products/desmaquillante/Mary&May-Vitamine-B.C.E-Cleansing-Balm-120g.jpg",
+      "./assets/Products/desmaquillantes/Mary&May-Vitamine-B.C.E-Cleansing-Balm-120g.jpg",
   },
   {
     id: 7,
@@ -55,7 +56,7 @@ const dataProducts = [
     price: 15.6,
     category: "limpiador",
     cardImg:
-      "./assets/products/limpiadores/TOCOBO-Coconut-Clay-Cleansing-Foam-150ml.jpg",
+      "./assets/Products/limpiadores/TOCOBO-Coconut-Clay-Cleansing-Foam-150ml.jpg",
   },
   {
     id: 8,
@@ -63,7 +64,7 @@ const dataProducts = [
     price: 25.6,
     category: "hidratante",
     cardImg:
-      "./assets/products/hidratantes/Tonymoly-Houttuynia-Cordata-Cica-Quick-Calming-Cream-70g.jpg",
+      "./assets/Products/hidratantes/Tonymoly-Houttuynia-Cordata-Cica-Quick-Calming-Cream-70g.jpg",
   },
   {
     id: 9,
@@ -71,7 +72,7 @@ const dataProducts = [
     price: 38.2,
     category: "protectorSolar",
     cardImg:
-      "./assets/products/protector-solar/TOCOBO-COTTON-SOFT-SUN-STICK-SPF50+-PA++++.jpg",
+      "./assets/Products/protectoresSolares/TOCOBO-COTTON-SOFT-SUN-STICK-SPF50+-PA++++.jpg",
   },
   {
     id: 10,
@@ -79,7 +80,7 @@ const dataProducts = [
     price: 43.2,
     category: "maquillaje",
     cardImg:
-      "./assets/products/maquillaje/SUREBASEGLAD-GLOW-FOUNDATION-04-N2-BRIGHT-BONNIE.jpg",
+      "./assets/Products/maquillaje/SUREBASEGLAD-GLOW-FOUNDATION-04-N2-BRIGHT-BONNIE.jpg",
   },
   {
     id: 11,
@@ -87,7 +88,7 @@ const dataProducts = [
     price: 18.2,
     category: "desmaquillante",
     cardImg:
-      "./assets/products/desmaquillante/Farm-stay-CICA-FARM-CALMING-CLEANSING-BALM-95ml.jpg",
+      "./assets/Products/desmaquillantes/Farm-stay-CICA-FARM-CALMING-CLEANSING-BALM-95ml.jpg",
   },
   {
     id: 12,
@@ -95,7 +96,7 @@ const dataProducts = [
     price: 20.3,
     category: "limpiador",
     cardImg:
-      "./assets/products/limpiadores/TIAM-(TUBE)-Snail-&-Azulene-Low-pH-Cleanser.jpg",
+      "./assets/Products/limpiadores/TIAM-(TUBE)-Snail-&-Azulene-Low-pH-Cleanser.jpg",
   },
   {
     id: 13,
@@ -103,7 +104,7 @@ const dataProducts = [
     price: 29.99,
     category: "hidratante",
     cardImg:
-      "./assets/products/limpiadores/SOMEBYMI-PROPOLIS-B5-GLOW-BARRIER-CALMING-OIL-TO-FOAM.jpg",
+      "./assets/Products/limpiadores/SOMEBYMI-PROPOLIS-B5-GLOW-BARRIER-CALMING-OIL-TO-FOAM.jpg",
   },
   {
     id: 14,
@@ -111,7 +112,7 @@ const dataProducts = [
     price: 30.0,
     category: "protectorSolar",
     cardImg:
-      "./assets/products/protector-solar/TIAM-Daily-Sun-Care-Cream-50ml.jpg",
+      "./assets/Products/protectoresSolares/TIAM-Daily-Sun-Care-Cream-50ml.jpg",
   },
   {
     id: 15,
@@ -119,7 +120,7 @@ const dataProducts = [
     price: 20.85,
     category: "maquillaje",
     cardImg:
-      "./assets/products/maquillaje/moonshot-Micro-Correctfit-Cushion-201-SPF50+-PA+++.jpg",
+      "./assets/Products/maquillaje/moonshot-Micro-Correctfit-Cushion-201-SPF50+-PA+++.jpg",
   },
   {
     id: 16,
@@ -127,7 +128,7 @@ const dataProducts = [
     price: 23.4,
     category: "limpiador",
     cardImg:
-      "./assets/products/limpiadores/Tonymoly-CLEAN-DEW-ACEROLA-FOAM-CLEANSER-180ml.jpg",
+      "./assets/Products/limpiadores/Tonymoly-CLEAN-DEW-ACEROLA-FOAM-CLEANSER-180ml.jpg",
   },
   {
     id: 17,
@@ -135,7 +136,7 @@ const dataProducts = [
     price: 31.2,
     category: "hidratante",
     cardImg:
-      "./assets/products/hidratantes/Pyunkang-yul-Moisture-Soothing-Sun-Cream-75ml.jpg",
+      "./assets/Products/hidratantes/Pyunkang-yul-Moisture-Soothing-Sun-Cream-75ml.jpg",
   },
   {
     id: 18,
@@ -143,7 +144,7 @@ const dataProducts = [
     price: 32.4,
     category: "protectorSolar",
     cardImg:
-      "./assets/products/protector-solar/SOMEBYMI-TRUECICA-MINERAL-CALMING-TONE-UP-SUNCREAM-50ml.jpg",
+      "./assets/Products/protectoresSolares/SOMEBYMI-TRUECICA-MINERAL-CALMING-TONE-UP-SUNCREAM-50ml.jpg",
   },
   {
     id: 19,
@@ -151,7 +152,7 @@ const dataProducts = [
     price: 15.7,
     category: "maquillaje",
     cardImg:
-      "./assets/products/maquillaje/rom&nd-ZERO-MATTE-LIPSTICK-16-DAZZLE-RED.jpg",
+      "./assets/Products/maquillaje/rom&nd-ZERO-MATTE-LIPSTICK-16-DAZZLE-RED.jpg",
   },
   {
     id: 20,
@@ -159,7 +160,7 @@ const dataProducts = [
     price: 13.2,
     category: "limpiador",
     cardImg:
-      "./assets/products/limpiadores/sioris-Day-by-day-Cleansing-gel-150ml.jpg",
+      "./assets/Products/limpiadores/sioris-Day-by-day-Cleansing-gel-150ml.jpg",
   },
   {
     id: 21,
@@ -167,7 +168,7 @@ const dataProducts = [
     price: 29.99,
     category: "hidratante",
     cardImg:
-      "./assets/products/hidratantes/Ogi-Water-Rich-Moisture-Cream-50ml.jpg",
+      "./assets/Products/hidratantes/Ogi-Water-Rich-Moisture-Cream-50ml.jpg",
   },
   {
     id: 22,
@@ -175,7 +176,7 @@ const dataProducts = [
     price: 15.7,
     category: "maquillaje",
     cardImg:
-      "./assets/products/maquillaje/rom&nd-ZERO-MATTE-LIPSTICK-21-SMOKED-BEIGE.jpg",
+      "./assets/Products/maquillaje/rom&nd-ZERO-MATTE-LIPSTICK-21-SMOKED-BEIGE.jpg",
   },
   {
     id: 23,
@@ -183,7 +184,7 @@ const dataProducts = [
     price: 16.3,
     category: "limpiador",
     cardImg:
-      "./assets/products/limpiadores/SecretKey-Lemon-Sparkling-Cleansing-Oil.jpg",
+      "./assets/Products/limpiadores/SecretKey-Lemon-Sparkling-Cleansing-Oil.jpg",
   },
   {
     id: 24,
@@ -191,7 +192,7 @@ const dataProducts = [
     price: 32.4,
     category: "hidratante",
     cardImg:
-      "./assets/products/hidratantes/MIGUHARA-Moisture-Perfection-Skin-400ml.jpg",
+      "./assets/Products/hidratantes/MIGUHARA-Moisture-Perfection-Skin-400ml.jpg",
   },
 ];
 
