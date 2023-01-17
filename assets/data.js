@@ -40,7 +40,7 @@ const dataProducts = [
     price: 40.1,
     category: "maquillaje",
     cardImg:
-      "./assets/Products/maquillaje/TirTir-TirTir-My-Glow-Cream-Cushion-21N-Ivory.jpg",
+      "./assets/Products/maquillajes/TirTir-TirTir-My-Glow-Cream-Cushion-21N-Ivory.jpg",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const dataProducts = [
     price: 43.2,
     category: "maquillaje",
     cardImg:
-      "./assets/Products/maquillaje/SUREBASEGLAD-GLOW-FOUNDATION-04-N2-BRIGHT-BONNIE.jpg",
+      "./assets/Products/maquillajes/SUREBASEGLAD-GLOW-FOUNDATION-04-N2-BRIGHT-BONNIE.jpg",
   },
   {
     id: 11,
@@ -120,7 +120,7 @@ const dataProducts = [
     price: 20.85,
     category: "maquillaje",
     cardImg:
-      "./assets/Products/maquillaje/moonshot-Micro-Correctfit-Cushion-201-SPF50+-PA+++.jpg",
+      "./assets/Products/maquillajes/moonshot-Micro-Correctfit-Cushion-201-SPF50+-PA+++.jpg",
   },
   {
     id: 16,
@@ -152,7 +152,7 @@ const dataProducts = [
     price: 15.7,
     category: "maquillaje",
     cardImg:
-      "./assets/Products/maquillaje/rom&nd-ZERO-MATTE-LIPSTICK-16-DAZZLE-RED.jpg",
+      "./assets/Products/maquillajes/rom&nd-ZERO-MATTE-LIPSTICK-16-DAZZLE-RED.jpg",
   },
   {
     id: 20,
@@ -176,7 +176,7 @@ const dataProducts = [
     price: 15.7,
     category: "maquillaje",
     cardImg:
-      "./assets/Products/maquillaje/rom&nd-ZERO-MATTE-LIPSTICK-21-SMOKED-BEIGE.jpg",
+      "./assets/Products/maquillajes/rom&nd-ZERO-MATTE-LIPSTICK-21-SMOKED-BEIGE.jpg",
   },
   {
     id: 23,
