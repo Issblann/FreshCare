@@ -233,10 +233,10 @@ const closeOnClickMenu = () => {
 
 // renderizar la card en el carrito
 const renderCardProduct = (card) => {
-  const { price, name, id, quantity, cardImg } = card;
+  const { price, name, id, quantity, img } = card;
   return `
 <div class="cart-item">
-            <img src=${cardImg} alt="imagen" /> 
+            <img src=${img} alt="imagen" /> 
 
           <div class="item-info">
               <h3 class="item-title">${name}</h3>
@@ -303,9 +303,9 @@ const addToCart = (e) => {
   if (!e.target.classList.contains("btn-add")) {
     return;
   }
-  const { id, name, price, cardImg } = e.target.dataset;
+  const { id, name, price, img } = e.target.dataset;
 
-  const product = productData(id, name, price, cardImg);
+  const product = productData(id, name, price, img);
 
   if (isExistingCardProduct(product)) {
     addUnitToProduct(product);
@@ -319,8 +319,8 @@ const addToCart = (e) => {
 };
 
 // pasar la data del producto a un objeto
-const productData = (id, name, price, cardImg) => {
-  return { id, name, price, cardImg };
+const productData = (id, name, price, img) => {
+  return { id, name, price, img };
 };
 
 // si existe el producto en el carrito
