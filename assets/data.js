@@ -23,7 +23,7 @@ const dataProducts = [
     price: 23.65,
     category: "hidratante",
     cardImg:
-      ".assets/products/hidratantes/Tonymoly-TheChokChok-GreenTea-WateryCream-60ml.jpg",
+      "./assets/products/hidratantes/Tonymoly-TheChokChok-GreenTea-WateryCream-60ml.jpg",
   },
   {
     id: 4,
