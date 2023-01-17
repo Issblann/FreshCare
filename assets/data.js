@@ -6,7 +6,7 @@ const dataProducts = [
     name: "Heimish All Clean balm 120ml",
     price: 16.75,
     category: "desmaquillante",
-    cardImg: "./assets/products/desmaquillante/Heimish-All-Clean-balm120ml.jpg",
+    cardImg: "/assets/products/desmaquillante/Heimish-All-Clean-balm120ml.jpg",
   },
 
   {
@@ -191,7 +191,7 @@ const dataProducts = [
     price: 32.4,
     category: "hidratante",
     cardImg:
-      "/.assets/products/hidratantes/MIGUHARA-Moisture-Perfection-Skin-400ml.jpg",
+      "/assets/products/hidratantes/MIGUHARA-Moisture-Perfection-Skin-400ml.jpg",
   },
 ];
 
