@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="./login-register.css" />
+    <link rel="stylesheet" href="./mediaqueries-login-register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- contenedor total empieza -->
+    <section class="container">
+      <!-- contenedor de toda la informacion empieza -->
+      <div class="container__info">
+        <a class="arrow__back" href="/index.html"
+          ><i class="fa-solid fa-arrow-left-long"></i
+        ></a>
+        <div class="info__top">
+          <h1>Bienvenido</h1>
+          <p>Registrate para obtener beneficios</p>
+        </div>
+
+        <!-- formulario empieza-->
+        <form class="form">
+          <div class="form__input">
+            <input
+              type="text"
+              placeholder="Nombre Completo"
+              class="form__input--name"
+              autocomplete="off"
+              id="name"
+            />
+            <small></small>
+          </div>
+
+          <div class="form__input">
+            <input
+              class="form__input--email"
+              type="email"
+              placeholder="Email"
+              autocomplete="off"
+              id="email"
+            />
+            <small></small>
+          </div>
+
+          <div class="form__input">
+            <input
+              class="form__input--password"
+              type="password"
+              placeholder="Password"
+              autocomplete="off"
+              id="password"
+            />
+            <small></small>
+          </div>
+          <input class="form__button" value="Registrarse" type="submit" />
+        </form>
+        <!-- formulario termina-->
+
+        <div class="info__bot">
+          <small>Ya tienes una cuenta?</small>
+          <a href="./login.html">Inicia sesion</a>
+        </div>
+      </div>
+      <!-- contenedor de toda la informacion termina -->
+
+      <!-- slider empieza -->
+      <div class="slider">
+        <div class="slides">
+          <!-- botones radio empieza -->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!-- botones radio termina -->
+          <!-- slide imagenes empieza -->
+          <div class="slide__img first">
+            <img src="./assets/IMAGENES-CARRUSEL/1.jpg" alt="img1" />
+          </div>
+          <div class="slide__img">
+            <img src="./assets/IMAGENES-CARRUSEL/2.jpg" alt="img2" />
+          </div>
+          <div class="slide__img">
+            <img src="./assets/IMAGENES-CARRUSEL/3.jpg" alt="img3" />
+          </div>
+          <div class="slide__img">
+            <img src="./assets/IMAGENES-CARRUSEL/4.jpg" alt="img4" />
+          </div>
+          <!-- slide imagenes termina -->
+          <!-- nav automatic empieza -->
+          <div class="nav__automatic">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- nav automatic termina -->
+        </div>
+      </div>
+      <!-- slider termina -->
+    </section>
+    <!-- contenedor total termina -->
+    <script src="./login-register.js"></script>
+  </body>
+</html>

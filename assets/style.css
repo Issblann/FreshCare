@@ -286,14 +286,18 @@ header {
   align-items: center;
 }
 .button-user {
-  background: var(--yellow-mostaza);
+  background: var(--gray-light);
+  border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-size: 19px;
+  font-size: 17px;
   padding: 5px;
+  text-align: center;
+  color: black;
 }
 .button-user--register {
   font-size: 10px;
+  background: var(--yellow-mostaza);
   color: var(--rojo-anaranjado);
 }
 
