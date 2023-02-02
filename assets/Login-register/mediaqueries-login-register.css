@@ -59,6 +59,8 @@
 
   .arrow__back {
     margin-left: -12px;
+    margin-bottom: 462px;
+    top: unset;
   }
   .container__info {
     width: 100%;

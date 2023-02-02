@@ -76,12 +76,6 @@
   .open-menu {
     display: flex;
   }
-  /* .menu-icon {
-    display: block;
-  } */
-  .logo {
-    margin-left: 35px;
-  }
 
   #contact {
     font-size: 11px;
@@ -159,10 +153,15 @@
 @media (max-width: 768px) {
   #contact {
     font-size: 11px;
-    width: 370px;
     padding: 10px 0;
   }
 
+  #contact h1 {
+    margin-top: 10px;
+  }
+  .contact-container {
+    padding: 50px;
+  }
   #information-text {
     gap: 40px;
   }
@@ -187,6 +186,9 @@
 /* Celular */
 
 @media (max-width: 576px) {
+  .logo {
+    max-width: 150px;
+  }
   .cart {
     left: 0;
     width: 100%;
@@ -234,11 +236,19 @@
   .products-container {
     width: 340px;
   }
+
+  .contact-container {
+    padding: unset;
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 360px) {
+  header {
+    gap: unset;
+  }
   .logo {
-    max-width: 150px;
+    max-width: 100px;
   }
   .products-container {
     max-width: 300px;
@@ -248,10 +258,10 @@
   }
 
   footer p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   footer a {
-    font-size: 14px;
+    font-size: 10px;
   }
 }

@@ -7,8 +7,6 @@ const formInput = document.querySelector(".form__input");
 const inputEmail = document.querySelector(".form__input--email");
 // Input de la contraseña
 const inputPassword = document.querySelector(".form__input--password");
-// Input de nombre
-const inputName = document.querySelector(".form__input--name");
 
 // check del email
 const checkEmail = () => {
@@ -41,21 +39,6 @@ const checkPassword = () => {
     );
   } else {
     showSuccess(inputPassword);
-    valid = true;
-  }
-
-  return valid;
-};
-
-const checkUsername = () => {
-  let valid = false;
-
-  const usernameValue = inputName.value.trim();
-
-  if (isEmpty(usernameValue)) {
-    showError(inputName, "Este campo es obligatorio");
-  } else {
-    showSuccess(inputName);
     valid = true;
   }
 
@@ -102,7 +85,7 @@ showSuccess = (input) => {
 
 // debounce
 
-const debounce = (fn, delay = 500) => {
+const debounce = (fn, delay = 900) => {
   let timeoutId;
 
   return (...args) => {
@@ -112,40 +95,6 @@ const debounce = (fn, delay = 500) => {
     }, delay);
   };
 };
-
-// el escuchador del submit
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let isEmailValid = checkEmail();
-  let isPasswordValid = checkPassword();
-  let isUsernameValid = checkUsername();
-
-  let isFormValid = isEmailValid & isPasswordValid & isUsernameValid;
-  if (isFormValid) {
-    form.submit();
-  }
-});
-
-// el escuchador del input para el debounce
-
-form.addEventListener(
-  "input",
-  debounce((e) => {
-    switch (e.target.id) {
-      case "name":
-        checkUsername();
-        break;
-      case "email":
-        checkEmail();
-        break;
-
-      case "password":
-        checkPassword();
-        break;
-    }
-  })
-);
 
 // la logica para arrastrar las imagenes una a una
 let counter = 2;
