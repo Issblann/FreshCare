@@ -253,6 +253,17 @@
   .products-container {
     max-width: 300px;
   }
+
+  .hero-info h1 {
+    font-size: 40px;
+  }
+
+  #information-text p {
+    max-width: 250px;
+  }
+  #info h2 {
+    font-size: 15px;
+  }
   #products h2 {
     font-size: 30px;
   }

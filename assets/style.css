@@ -58,8 +58,7 @@ header {
 .navbar-list a {
   color: black;
   font-weight: 400;
-  transition-property: all;
-  transition-duration: 0.3s;
+  position: relative;
 }
 
 .navbar-list li:first-child > a {
@@ -67,12 +66,18 @@ header {
   font-weight: 600;
 }
 
-.navbar-list a:hover {
+.navbar-list a::after {
+  content: "";
+  position: absolute;
   background: var(--rojo-anaranjado);
-  transition-property: all;
-  transition-duration: 0.3s;
-  border-radius: 10px;
-  padding: 8px;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.navbar-list a:hover::after {
+  width: 100%;
 }
 
 .icons-container {
@@ -258,15 +263,6 @@ header {
   cursor: not-allowed;
   border: none;
 }
-/* #cart-toggle,
-#menu-toggle,
-.menu-label {
-  display: none;
-}
-
-#cart-toggle:checked + .cart {
-  display: flex;
-} */
 
 .user-container {
   position: absolute;
@@ -317,7 +313,6 @@ main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  gap: 30px;
 }
 
 #hero {
@@ -381,10 +376,6 @@ main {
   margin: 20px 20px;
 }
 
-/* .hero-card img {
-  margin-top: 100px;
-} */
-
 .hero-card-info {
   color: var(--rojo-anaranjado);
   font-weight: 600;
@@ -428,16 +419,7 @@ main {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  /* transition-property: all;
-  transition-duration: 0.3s; */
 }
-
-/* .info-card img:hover {
-  transition-property: all;
-  transition-duration: 0.3s;
-  width: 260px;
-  height: 260px;
-} */
 
 .info-cards-container h3 {
   display: flex;
@@ -505,6 +487,10 @@ main {
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.buttonCategory:hover {
+  background: var(--rojo-anaranjado);
 }
 .products-container {
   display: flex;
@@ -718,10 +704,3 @@ footer span {
   transform: translateY(0);
   transition: all 0.5s ease-in;
 }
-/*
-font-family: 'Halant', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-family: "Bebas Neue", cursive;
-font-family: "Poppins", sans-serif;
-*/
