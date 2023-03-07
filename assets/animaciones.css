@@ -9,12 +9,10 @@ html {
   height: 100vh;
   width: 100%;
   z-index: 1;
-  /* background: rgba(255, 255, 255, 0.05); */
-  /* backdrop-filter: blur(0.5px);
-  -webkit-backdrop-filter: blur(1px); */
   display: none;
 }
 
-.show-overlay {
-  display: flex;
+.overlay.show-overlay {
+  display: block;
+  transition: all 0.5 ease;
 }

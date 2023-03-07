@@ -1,5 +1,5 @@
 :root {
-  --background: #fffcf8;
+  --background: #f3f3f3;
   --gray: #808080;
   --gray-dark: #333333;
   --yellow-mostaza: #f7b941;
@@ -53,7 +53,7 @@
     width: 90%;
     height: 600px;
     padding: 20px;
-    background: var(--gray-light);
+    background: var(--background);
     box-shadow: unset;
   }
 
@@ -65,7 +65,7 @@
   .container__info {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 40px 40px 77px #b8b8b8, -40px -40px 77px #ffffff;
+
     align-items: center;
     padding: unset;
   }
@@ -87,5 +87,11 @@
 
   .form__button {
     width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    width: 100%;
   }
 }

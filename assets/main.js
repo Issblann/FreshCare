@@ -162,10 +162,6 @@ const toggleCart = () => {
     menuList.classList.remove("open-menu");
     return;
   }
-  if (userMenu.classList.contains("open-user")) {
-    userMenu.classList.remove("open-user");
-    return;
-  }
   overlay.classList.toggle("show-overlay");
 };
 
@@ -177,26 +173,7 @@ const toggleMenu = () => {
     cart.classList.remove("open-cart");
     return;
   }
-  if (userMenu.classList.contains("open-user")) {
-    userMenu.classList.remove("open-user");
-    return;
-  }
-  overlay.classList.toggle("show-overlay");
-};
 
-// toggle del user, iniciar sesion y registrarse
-
-const toggleUser = () => {
-  userMenu.classList.toggle("open-user");
-
-  if (cart.classList.contains("open-cart")) {
-    cart.classList.remove("open-cart");
-    return;
-  }
-  if (menuList.classList.contains("open-menu")) {
-    menuList.classList.remove("open-menu");
-    return;
-  }
   overlay.classList.toggle("show-overlay");
 };
 
@@ -204,14 +181,12 @@ const toggleUser = () => {
 const closeOnScroll = () => {
   if (
     !menuList.classList.contains("open-menu") &&
-    !cart.classList.contains("open-cart") &&
-    !userMenu.classList.contains("open-user")
+    !cart.classList.contains("open-cart")
   ) {
     return;
   }
   menuList.classList.remove("open-menu");
   cart.classList.remove("open-cart");
-  userMenu.classList.remove("open-user");
   overlay.classList.remove("show-overlay");
 };
 
@@ -219,7 +194,6 @@ const closeOnScroll = () => {
 const closeOnOverlayClick = () => {
   menuList.classList.remove("open-menu");
   cart.classList.remove("open-cart");
-  userMenu.classList.remove("open-user");
   overlay.classList.remove("show-overlay");
 };
 
@@ -227,7 +201,6 @@ const closeOnOverlayClick = () => {
 const closeOnClickMenu = () => {
   menuList.classList.remove("open-menu");
   cart.classList.remove("open-cart");
-  userMenu.classList.remove("open-user");
   overlay.classList.remove("show-overlay");
 };
 
@@ -444,7 +417,6 @@ const init = () => {
   containerCategories.addEventListener("click", applyFilter);
   btnCart.addEventListener("click", toggleCart);
   btnMenu.addEventListener("click", toggleMenu);
-  btnUser.addEventListener("click", toggleUser);
   window.addEventListener("scroll", closeOnScroll);
   overlay.addEventListener("click", closeOnOverlayClick);
   menuList.addEventListener("click", closeOnClickMenu);

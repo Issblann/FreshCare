@@ -4,7 +4,7 @@ const dataProducts = [
   {
     id: 1,
     name: "Heimish All Clean balm 120ml",
-    price: 16.75,
+    price: 5.75,
     category: "desmaquillante",
     cardImg:
       "./assets/Products/desmaquillantes/Heimish-All-Clean-balm120ml.jpg",
@@ -13,7 +13,7 @@ const dataProducts = [
   {
     id: 2,
     name: "Super Hyalon Foam Cleanser",
-    price: 12.75,
+    price: 5.75,
     category: "limpiador",
     cardImg: "./assets/Products/limpiadores/Super-Hyalon-Foam-Cleanser.jpg",
   },
@@ -21,7 +21,7 @@ const dataProducts = [
   {
     id: 3,
     name: "Tonymoly The Chok Chok Green Tea Watery Cream 60ml",
-    price: 23.65,
+    price: 13.65,
     category: "hidratante",
     cardImg:
       "./assets/Products/hidratantes/Tonymoly-TheChokChok-GreenTea-WateryCream-60ml.jpg",
@@ -29,7 +29,7 @@ const dataProducts = [
   {
     id: 4,
     name: "TOCOBO BIO WATERY SUN CREAM SPF50+ PA++++",
-    price: 35.2,
+    price: 25.22,
     category: "protectorSolar",
     cardImg:
       "./assets/Products/protectoresSolares/TOCOBO-BIO-WATERY-SUN-CREAM-SPF50+-PA++++.jpg",
@@ -37,7 +37,7 @@ const dataProducts = [
   {
     id: 5,
     name: "TirTir TirTir My Glow Cream Cushion 21N Ivory",
-    price: 40.1,
+    price: 35.11,
     category: "maquillaje",
     cardImg:
       "./assets/Products/maquillajes/TirTir-TirTir-My-Glow-Cream-Cushion-21N-Ivory.jpg",
@@ -45,7 +45,7 @@ const dataProducts = [
   {
     id: 6,
     name: "Mary&May Vitamine B.C.E Cleansing Balm 120g",
-    price: 23.3,
+    price: 3.33,
     category: "desmaquillante",
     cardImg:
       "./assets/Products/desmaquillantes/Mary&May-Vitamine-B.C.E-Cleansing-Balm-120g.jpg",
@@ -53,7 +53,7 @@ const dataProducts = [
   {
     id: 7,
     name: "TOCOBO Coconut Clay Cleansing Foam 150ml",
-    price: 15.6,
+    price: 2.66,
     category: "limpiador",
     cardImg:
       "./assets/Products/limpiadores/TOCOBO-Coconut-Clay-Cleansing-Foam-150ml.jpg",
@@ -61,7 +61,7 @@ const dataProducts = [
   {
     id: 8,
     name: "Tonymoly Houttuynia Cordata Cica Quick Calming Cream 70g",
-    price: 25.6,
+    price: 15.66,
     category: "hidratante",
     cardImg:
       "./assets/Products/hidratantes/Tonymoly-Houttuynia-Cordata-Cica-Quick-Calming-Cream-70g.jpg",
@@ -69,7 +69,7 @@ const dataProducts = [
   {
     id: 9,
     name: "TOCOBO COTTON SOFT SUN STICK SPF50+ PA++++",
-    price: 38.2,
+    price: 30.22,
     category: "protectorSolar",
     cardImg:
       "./assets/Products/protectoresSolares/TOCOBO-COTTON-SOFT-SUN-STICK-SPF50+-PA++++.jpg",
@@ -77,7 +77,7 @@ const dataProducts = [
   {
     id: 10,
     name: "SUREBASEGLAD GLOW FOUNDATION #04 N2 BRIGHT BONNIE",
-    price: 43.2,
+    price: 34.22,
     category: "maquillaje",
     cardImg:
       "./assets/Products/maquillajes/SUREBASEGLAD-GLOW-FOUNDATION-04-N2-BRIGHT-BONNIE.jpg",
@@ -85,7 +85,7 @@ const dataProducts = [
   {
     id: 11,
     name: "Farm stay CICA FARM CALMING CLEANSING BALM 95ml",
-    price: 18.2,
+    price: 8.22,
     category: "desmaquillante",
     cardImg:
       "./assets/Products/desmaquillantes/Farm-stay-CICA-FARM-CALMING-CLEANSING-BALM-95ml.jpg",
@@ -93,7 +93,7 @@ const dataProducts = [
   {
     id: 12,
     name: "TIAM (TUBE) Snail & Azulene Low pH Cleanser",
-    price: 20.3,
+    price: 2.55,
     category: "limpiador",
     cardImg:
       "./assets/Products/limpiadores/TIAM-(TUBE)-Snail-&-Azulene-Low-pH-Cleanser.jpg",
@@ -101,7 +101,7 @@ const dataProducts = [
   {
     id: 13,
     name: "SOMEBYMI YUJA NIACIN BRIGHTENING MOISTURE GEL CREAM",
-    price: 29.99,
+    price: 22.99,
     category: "hidratante",
     cardImg:
       "./assets/Products/limpiadores/SOMEBYMI-PROPOLIS-B5-GLOW-BARRIER-CALMING-OIL-TO-FOAM.jpg",
@@ -109,7 +109,7 @@ const dataProducts = [
   {
     id: 14,
     name: "TIAM Daily Sun Care Cream 50ml",
-    price: 30.0,
+    price: 30.99,
     category: "protectorSolar",
     cardImg:
       "./assets/Products/protectoresSolares/TIAM-Daily-Sun-Care-Cream-50ml.jpg",
@@ -117,7 +117,7 @@ const dataProducts = [
   {
     id: 15,
     name: "moonshot Micro Correctfit Cushion 201 SPF50+ PA+++",
-    price: 20.85,
+    price: 20.55,
     category: "maquillaje",
     cardImg:
       "./assets/Products/maquillajes/moonshot-Micro-Correctfit-Cushion-201-SPF50+-PA+++.jpg",
@@ -125,7 +125,7 @@ const dataProducts = [
   {
     id: 16,
     name: "Tonymoly CLEAN DEW ACEROLA FOAM CLEANSER 180ml",
-    price: 23.4,
+    price: 3.43,
     category: "limpiador",
     cardImg:
       "./assets/Products/limpiadores/Tonymoly-CLEAN-DEW-ACEROLA-FOAM-CLEANSER-180ml.jpg",
@@ -133,7 +133,7 @@ const dataProducts = [
   {
     id: 17,
     name: "Pyunkang yul Moisture Soothing Sun Cream 75ml",
-    price: 31.2,
+    price: 11.24,
     category: "hidratante",
     cardImg:
       "./assets/Products/hidratantes/Pyunkang-yul-Moisture-Soothing-Sun-Cream-75ml.jpg",
@@ -141,7 +141,7 @@ const dataProducts = [
   {
     id: 18,
     name: "SOMEBYMI TRUECICA MINERAL CALMING TONE-UP SUNCREAM 50ml",
-    price: 32.4,
+    price: 28.44,
     category: "protectorSolar",
     cardImg:
       "./assets/Products/protectoresSolares/SOMEBYMI-TRUECICA-MINERAL-CALMING-TONE-UP-SUNCREAM-50ml.jpg",
@@ -149,7 +149,7 @@ const dataProducts = [
   {
     id: 19,
     name: "rom&nd ZERO MATTE LIPSTICK 16 DAZZLE RED",
-    price: 15.7,
+    price: 15.72,
     category: "maquillaje",
     cardImg:
       "./assets/Products/maquillajes/rom&nd-ZERO-MATTE-LIPSTICK-16-DAZZLE-RED.jpg",
@@ -157,7 +157,7 @@ const dataProducts = [
   {
     id: 20,
     name: "Sioris Day by day Cleansing gel 150ml",
-    price: 13.2,
+    price: 4.25,
     category: "limpiador",
     cardImg:
       "./assets/Products/limpiadores/sioris-Day-by-day-Cleansing-gel-150ml.jpg",
@@ -165,7 +165,7 @@ const dataProducts = [
   {
     id: 21,
     name: "Ogi Water Rich Moisture Cream 50ml",
-    price: 29.99,
+    price: 22.99,
     category: "hidratante",
     cardImg:
       "./assets/Products/hidratantes/Ogi-Water-Rich-Moisture-Cream-50ml.jpg",
@@ -173,7 +173,7 @@ const dataProducts = [
   {
     id: 22,
     name: "rom&nd ZERO MATTE LIPSTICK 21 SMOKED BEIGE",
-    price: 15.7,
+    price: 15.75,
     category: "maquillaje",
     cardImg:
       "./assets/Products/maquillajes/rom&nd-ZERO-MATTE-LIPSTICK-21-SMOKED-BEIGE.jpg",
@@ -181,7 +181,7 @@ const dataProducts = [
   {
     id: 23,
     name: "SecretKey Lemon Sparkling Cleansing Oil",
-    price: 16.3,
+    price: 6.99,
     category: "limpiador",
     cardImg:
       "./assets/Products/limpiadores/SecretKey-Lemon-Sparkling-Cleansing-Oil.jpg",
@@ -189,7 +189,7 @@ const dataProducts = [
   {
     id: 24,
     name: "MIGUHARA Moisture Perfection Skin 400ml",
-    price: 32.4,
+    price: 18.0,
     category: "hidratante",
     cardImg:
       "./assets/Products/hidratantes/MIGUHARA-Moisture-Perfection-Skin-400ml.jpg",
